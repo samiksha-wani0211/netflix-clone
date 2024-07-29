@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <section class="container">
+        <div class="head">
+            <img src="logo-netflix.png" alt="logo" width="400" height="500">
+            <a href="#">Sign up</a>
+        </div>
+    </section>
+    <section class="banner">
+        <img src="Netflix-background.jpg" class="fit"alt="Background">
+        <div class="box">
+            <div class="heading">
+                <h2>Unlimited movies, TV shows, and more.</h2>
+                <h5>Watch anywhere. Cancel anytime.</h5>
+                <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            </div>
+            <div class="search">
+                <input type="text" name="" placeholder="Enter Email">
+                <a href="#">Try 30 days free ></a>
+            </div>
+        </div>
+    </section>
+    <br><br><br>
+    <section class="part1">
+        <div class="talk">
+            <h1>Enjoy on your TV.</h1>
+            <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+        </div>
+        <div class="img">
+            <img src="cursed-netflix-series.jpg" alt="">
+        </div>
+    </section>
+    <section class="part2">
+        <div class="img">
+            <img src="wednesday.jpeg" alt="">
+        </div>
+        <div class="talk">
+            <h1>Download your shows to watch offline.</h1>
+            <p>Save your favourite easily and always have something to watch.</p>
+        </div>
+    </section>
+    <section class="part3">
+        <div class="talk">
+            <h1>Watch everywhere.</h1>
+            <p>Stream unlimited movies and TV shows on your phone,tablet,laptop,and TV without paying more. </p>
+        </div>
+        <div class="img">
+            <img src="Stranger-things.jpg" alt="">
+        </div>
+    </section>
+    <section class="list">
+        <h1>Frequently Asked Questions</h1>
+        <div class="accordion">
+                <div class="item">
+                    <div class="label1">What is Netflix?</div>
+                    <p class="para1">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+                        <br><br>
+                    You can watch as much as you want, whenever you want without a single commercial - all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
+                </div>
+             </div>
+            </div>
+        <div class="accordion">
+            <div class="item">
+                <div class="label1">How much does Netflix cost?</div>
+                <p class="para1">Watch Netflix on your smartphone,tablet,Smart TV,laptop,or streaming device,all for one fixed monthly fee.Plans range from USD11.99 a month.No extra costs,no contracts.</p>
+            </div>
+         </div>
+        </div>
+        <div class="accordion">
+            <div class="item">
+                <div class="label1">Where can I watch?</div>
+                <p class="para1">Watch anywhere,anytime,on an unlimited number of devices.Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app,including smart TVs,smartphones,tablets,streaming media players and game consoles.
+                    <br><br>
+                    You can also download your favourite shows with the iOS,Android, or Windows 10 app.Use downloads to watch while you're on the go and without an internet connection.Take Netflix with you anywhere.
+                </p>
+            </div>
+         </div>
+        </div>
+        <div class="accordion">
+            <div class="item">
+                <div class="label1">How do I cancel?</div>
+                <p class="para1">Netflix is flexible.There are no pesky contracts and no commitments.You can easily cancel your account online in two clicks.There are no cancellation fees-start or stop your account anytime.</p>
+            </div>
+         </div>
+        </div>
+    </section>
+    <script>
+        const labels = document.getElementsByClassName('label1');
+        for (let i = 0; i < labels.length; i++) {
+            labels[i].addEventListener('click', function() {
+                const item = this.parentElement;
+                item.classList.toggle('active');
+                const content = item.querySelector('.para1');
+                if (item.classList.contains('active')) {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                } else {
+                    content.style.maxHeight = 0;
+                }
+            });
+        }
+    </script>
+    <br><br><br>
+    <section class="banner2">
+        <div class="box">
+            <div class="heading">
+                <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            </div>
+            <div class="search">
+                <input type="text" name="" placeholder="Enter Email">
+                <a href="#">Try 30 days free ></a>
+            </div>
+        </div>
+    </section>
+    <section class="Footer">
+        <div class="one">
+            <ul class="items">
+                <li><a href="#">One</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+            </ul>
+
+            <ul class="items">
+                <li><a href="#">Two</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+            </ul>
+        </div>
+
+        <div class="one">
+            <ul class="items">
+                <li><a href="#">Three</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+            </ul>
+
+            <ul class="items">
+                <li><a href="#">Four</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
